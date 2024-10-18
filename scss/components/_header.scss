@@ -1,0 +1,154 @@
+.header {
+  &__fixed {
+    padding: 15px 0;
+    box-shadow: rgba(0, 11, 48, 0.254) 0px 2px 3px;
+
+    @include breakpoint-1100 {
+      padding: 12px 0;
+    }
+  }
+
+  &__container {
+    @include flex-all-between;
+    gap: 15px;   
+  }
+
+  &__content {
+    @include flex-align-center;
+    gap: 20px;
+    width: 100%;
+    transition: all var(--transition);
+
+    @include breakpoint-1100 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: var(--z-index-3);
+      width: 320px;
+      height: 100vh;
+      background-color: var(--white-color);
+      box-shadow: rgba(0, 0, 0, 0.644) 0px 2px 3px;
+      transform: translateX(-100%);
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  &__overlay {
+     display: none;
+     transition: all var(--transition);
+     
+     &.active {
+       display: block;
+       position: fixed;
+       top: 0;
+       right: 0;
+       width: 100%;
+       min-height: 100vh;
+       background-color: rgba(0, 0, 0, 0.644);
+     }
+  }
+
+  &__nav {
+    width: 100%;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      @include breakpoint-1100 {
+        flex-direction: column;
+        gap: 0px;
+      }
+    }
+
+    &-link {
+      color: var(--black-color);
+      transition: all var(--transition);
+
+      @include breakpoint-1100 {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid var(--gray-color);
+
+        &:hover {
+          color: var(--white-color);
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    gap: 8px;
+
+    @include breakpoint-1100 {
+      padding: 15px;
+    }
+
+    &-link {
+      position: relative;
+      display: block;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      transition: transform var(--transition);
+
+      &:hover {
+        transform: scale(0.95);
+      }
+
+      & svg {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        width: 22px;
+        height: 22px;
+        transform: translate(50%, -50%);
+
+        & path {
+          fill: var(--white-color);
+        }
+      }
+
+      &-tel {
+        background-color: var(--primary-color);
+
+        & svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &-whatsapp {
+        background-color: var(--whatsapp-color);
+      }
+
+      &-telegram {
+        background-color: var(--telegram-color);
+
+        & svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    padding: 15px 30px;
+    white-space: nowrap;
+
+    @include breakpoint-1100 {
+      margin-left: 15px;
+    }
+  }
+}

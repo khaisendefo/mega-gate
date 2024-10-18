@@ -1,0 +1,45 @@
+.header__burger {
+  display: none;
+  border-radius: 4px;
+  padding: 5px;
+  gap: 5px;
+  width: 38px;
+  height: 35px;
+  border: 2px solid var(--black-color);
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: var(--z-index-4);
+
+  @include breakpoint-1100 {
+    @include flex-column;
+    justify-content: center;
+  }
+
+  & span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black-color);
+    transition: all var(--transition);
+    transform-origin: center;
+  }
+
+  &.active {
+    background-color: var(--white-color);
+    span {
+      &:nth-child(1) {
+        transform: translateY(6px) rotate(45deg); 
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); 
+      }
+    }
+  }
+}

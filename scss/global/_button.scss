@@ -1,0 +1,17 @@
+.blue-button {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: all var(--transition);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
