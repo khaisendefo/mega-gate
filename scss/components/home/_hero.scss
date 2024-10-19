@@ -1,0 +1,117 @@
+.hero {
+  position: relative;
+
+  &__inner {
+    position: relative;
+    padding: 100px 0;
+    background: url('/assets/images/R095.jfif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0000009c;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__body {
+    @include flex-between;
+    position: relative;
+    z-index: var(--z-index-2);
+  }
+
+  &__information {
+    max-width: 700px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    color: var(--white-color);
+  }
+
+  &__description {
+    margin-bottom: 35px;
+    color: var(--white-color);
+  }
+
+  &__link {
+    display: block; 
+    margin-bottom: 35px;
+    padding: 25px 30px;
+    max-width: 260px;
+  }
+
+  &__working-hours {
+    @include flex-align-center;
+    gap: 8px;
+    color: var(--white-color);
+
+    & svg path {
+      fill: var(--primary-color);
+    }
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 400px;
+
+    &::before {
+      content: '';
+      background-color: var(--primary-color);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 450px;
+      height: 350px;
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    & img {
+      width: 300px;
+    }
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    &-card {
+      border-radius: 10px;
+      border: 1px solid var(--gray-color);
+      padding: 30px;
+
+      & svg {
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+
+        & path {
+          fill: var(--primary-color);
+        }
+      }
+    }
+
+    &-description {
+      color: var(--black-color);
+    }
+  }
+}

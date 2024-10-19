@@ -2,6 +2,11 @@
 @import 'text';
 @import 'burger';
 
+::selection {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
 .body {
   font-family: Jost;
   background-color: var(--white-color);
@@ -29,7 +34,7 @@
   font-size: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--black-color);
+  color: var(--white-color);
 
   & span {
     color: var(--primary-color);
@@ -39,8 +44,8 @@
     content: '';
     border-radius: 50%;
     margin-right: 5px;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-color: var(--primary-color);
   }
 }

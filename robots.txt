@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mega-gate.ru/sitemap.xml
