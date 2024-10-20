@@ -1,0 +1,137 @@
+.footer {
+  position: relative;
+  padding-top: 70px;
+
+  &__top {
+    margin-bottom: 40px;
+    &-title {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &__form {
+    &-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    &-input {
+      padding: 25px;
+    }
+
+    &-button {
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    &-privacy {
+      display: flex;
+      align-items: start;
+      gap: 7px;
+      max-width: 800px;
+    }
+
+    &-checkbox {
+      transform: translateY(2px);
+    }
+
+    &-text {
+      font-size: 0.9em;
+      line-height: 1.3;
+
+      & a {
+        color: var(--primary-color);
+      }
+    } 
+  }
+  
+  &__maps {
+    width: 100%;
+    height: 550px;
+    filter: grayscale(20%);
+    -ms-filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+    -moz-filter: grayscale(20%);
+    -o-filter: grayscale(20%);
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__card {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: var(--z-index-2);
+    padding: 30px;
+    width: 450px;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+
+    &-title {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-row {
+    @include flex-align-center;
+    gap: 10px;
+  }
+
+  &__contact {
+    @include flex-column;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    &-link {
+      font-size: 1.1em;
+      font-weight: 400;
+    }
+  }
+
+  &-label {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  &__address {
+    @include flex-column;
+    gap: 8px;
+    margin-bottom: 30px;
+    &-text {
+      font-style: normal;
+      font-size: 1.1em
+    }
+  }
+
+  &__working-hourse {
+    @include flex-column;
+    gap: 8px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      width: 15px;
+      height: 15px;
+      transform: translate(50%, -50%);
+
+      & path {
+        fill: var(--white-color);
+      }
+    }
+  }
+}
