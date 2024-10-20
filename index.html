@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MegaGate - Оптовая доставка техники Apple</title>
   <link rel="stylesheet" href="assets/libs/splide.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <title>MegaGate - Оптовая доставка техники Apple</title>
 </head>
 <body class="body">
   <div class="wrapper">
@@ -73,7 +73,7 @@
               <div class="hero__information">
                 <h1 class="hero__title text-title">Оптовые поставки Apple от завода изготовителя</h1>
                 <p class="hero__description text-description">Получите оригинальную технику Apple по выгодным ценам напрямую с завода-изготовителя. Гарантируем быструю и безопасную доставку оптовых партий в любой регион, исключая посредников и дополнительные наценки.</p>
-                <a class="hero__link blue-button" href="#">
+                <a class="hero__link blue-button modal-open" href="#">
                   Получить прайс-лист
                 </a>
                 <div class="hero__working-hours">
@@ -137,7 +137,7 @@
                     <input class="prise__form-input form-input" name="Имя" type="text" required placeholder="Ваше имя">
                   </label>
                   <label class="prise__form-label form-label" for="">
-                    <input class="prise__form-input form-input" name="Телефон" type="tel" required placeholder="Ваш телефон">
+                    <input class="prise__form-input input-tel form-input" id="phone" name="Телефон" type="tel" required placeholder="Ваш телефон">
                   </label>
                   <label class="prise__form-label form-label" for="">
                     <input class="prise__form-input form-input" name="Email" type="email" required placeholder="Ваш e-mail (для отправки КП)">
@@ -448,7 +448,37 @@
         <iframe class="footer__maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe554b622e7d5e1e18b956356c70f36d2ce764a60a5681884d3e55eb542d35ca&amp;source=constructor" width="1280" height="550" frameborder="0"></iframe>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__inner">
+          <button class="modal__close">
+            <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg>
+          </button>
+          <div class="modal__window">
+            <h2 class="modal__title text-title">Отправка товара в день заказа товара</h2>
+            <form class="modal__form form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="2a529890-d072-4e5f-ad4b-b35ea73b1f0d">
+                <label class="modal__form-label form-label" for="">
+                  <input class="modal__form-input form-input" name="Имя" type="text" required placeholder="Ваше имя">
+                </label>
+                <label class="modal__form-label form-label" for="">
+                  <input class="modal__form-input form-input" name="Телефон" type="tel" required placeholder="Ваш телефон">
+                </label>
+                <label class="modal__form-label form-label" for="">
+                  <input class="modal__form-input form-input" name="Email" type="email" required placeholder="Ваш e-mail (для отправки КП)">
+                </label>
+                <div class="modal__form-privacy">
+                  <input class="modal__form-checkbox form-checkbox" required type="checkbox">
+                  <p class="modal__form-text">Я принимаю условия <a target="_blank" href="https://trade-mi.ru/privacy">Политики конфиденциальности</a> и даю своё согласие на обработку и использование моих персональных данных, и разрешаю сделать запрос в бюро кредитных историй</p>
+                </div>
+                <button class="modal__form-button form-button blue-button" type="submit">Получить прайс-лист</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="assets/libs/inputmask.min.js"></script>
   <script src="assets/libs/splide.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
