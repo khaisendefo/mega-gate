@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/libs/splide.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>MegaGate - Оптовая доставка техники Apple</title>
 </head>
@@ -113,6 +114,198 @@
           </ul>
         </div>
       </section>
+      <section class="prise main-section">
+        <div class="prise__inner">
+          <div class="prise__container container">
+            <h2 class="prise__title text-title">Узнайте стоимость нашей продукции именно для Ваших текущих объемов</h2>
+            <div class="prise__body">
+              <div class="prise__left">
+                <h3 class="prise__subtitle text-link">Какой средний объем закупок в месяц Вы планируете?</h3>
+                <form class="prise__form form" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="2a529890-d072-4e5f-ad4b-b35ea73b1f0d">
+                  <div class="prise__form-block">
+                    <div class="prise__form-wrap">
+                      <output class="prise__form-sum"></output>
+                      <input class="prise__form-range" min="0" step="200000" type="range" max="1400000" name="Бюджет" required>
+                    </div>
+                    <div class="prise__form-row">
+                      <span>0 <span class="rub">₽</span></span>
+                      <span>1400000 <span class="rub">₽</span></span>
+                    </div>
+                  </div>
+                  <label class="prise__form-label form-label" for="">
+                    <input class="prise__form-input form-input" name="Имя" type="text" required placeholder="Ваше имя">
+                  </label>
+                  <label class="prise__form-label form-label" for="">
+                    <input class="prise__form-input form-input" name="Телефон" type="tel" required placeholder="Ваш телефон">
+                  </label>
+                  <label class="prise__form-label form-label" for="">
+                    <input class="prise__form-input form-input" name="Email" type="email" required placeholder="Ваш e-mail (для отправки КП)">
+                  </label>
+                  <div class="prise__form-privacy">
+                    <input class="prise__form-checkbox form-checkbox" required type="checkbox">
+                    <p class="prise__form-text">Я принимаю условия <a target="_blank" href="https://trade-mi.ru/privacy">Политики конфиденциальности</a> и даю своё согласие на обработку и использование моих персональных данных, и разрешаю сделать запрос в бюро кредитных историй</p>
+                  </div>
+                  <button class="prise__form-button form-button blue-button" type="submit">Получить персональное КП</button>
+                </form>
+              </div>
+              <div class="prise__image">
+                <img src="assets/images/prise.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product main-section">
+        <div class="product__inner">
+          <div class="product__container container">
+            <h2 class="product__title text-title">популярные товары</h2>
+            <div class="product__body">
+              <article class="product__card">
+                <div class="product__card-image">
+                  <img src="assets/images/product/iphone16promax.jpeg" alt="Айфон 16 pro max">
+                </div>
+                <div class="product__card-info">
+                  <h3 class="product__card-name">Iphone 16 Pro Max</h3>
+                  <p class="product__card-description text-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, atque!</p>
+                </div>
+              </article>
+              <article class="product__card">
+                <div class="product__card-image">
+                  <img src="assets/images/product/airpods.jpg" alt="AirPods pro 2">
+                </div>
+                <div class="product__card-info">
+                  <h3 class="product__card-name">AirPods Pro 2</h3>
+                  <p class="product__card-description text-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, atque!</p>
+                </div>
+              </article>
+              <article class="product__card">
+                <div class="product__card-image">
+                  <img width="179" src="assets/images/product/dyson.jpg" alt="Айфон 16 pro max">
+                </div>
+                <div class="product__card-info">
+                  <h3 class="product__card-name">Dyson Airstrait</h3>
+                  <p class="product__card-description text-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, atque!</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews main-section">
+        <div class="reviews__inner">
+          <div class="reviews__container container">
+            <h2 class="reviews__title text-title">Отзывы наших клиентов</h2>
+            <div class="reviews__slider splide">
+              <nav class="reviews__slider-nav">
+                <button class="reviews__slider-nav-arrow reviews__slider-nav-arrow--prev">
+                  <div class="reviews__slider-nav-wrap">
+                    <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.25 23.5L2.75 13L13.25 2.5" stroke="#91D041" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>  
+                </button>
+                <button class="reviews__slider-nav-arrow reviews__slider-nav-arrow--next">
+                  <div class="reviews__slider-nav-wrap">
+                    <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.75 2.5L13.25 13L2.75 23.5" stroke="#91D041" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                  </div>
+                </button>
+              </nav>
+              <div class="reviews__slider-track splide__track">
+                <ul class="reviews__slider-list splide__list">
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Имя Фамилия</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/icons/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">17 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla expedita excepturi libero cum dolorem facere? Eaque rem officiis magnam veniam iste quisquam perferendis repudiandae, ipsam quaerat eos porro soluta!</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Имя Фамилия</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/icons/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">17 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla expedita excepturi libero cum dolorem facere? Eaque rem officiis magnam veniam iste quisquam perferendis repudiandae, ipsam quaerat eos porro soluta!</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Имя Фамилия</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/icons/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">17 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla expedita excepturi libero cum dolorem facere? Eaque rem officiis magnam veniam iste quisquam perferendis repudiandae, ipsam quaerat eos porro soluta!</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Имя Фамилия</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/icons/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">17 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla expedita excepturi libero cum dolorem facere? Eaque rem officiis magnam veniam iste quisquam perferendis repudiandae, ipsam quaerat eos porro soluta!</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Имя Фамилия</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/icons/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">17 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla expedita excepturi libero cum dolorem facere? Eaque rem officiis magnam veniam iste quisquam perferendis repudiandae, ipsam quaerat eos porro soluta!</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="advantages main-section">
         <div class="advantages__inner">
           <div class="advantages__container container">
@@ -195,6 +388,7 @@
       </section>
     </main>
   </div>
+  <script src="assets/libs/splide.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 .hero {
   position: relative;
+  background-color: #f6f6f6;
 
   &__inner {
     position: relative;
     padding: 100px 0;
-    background: url('/assets/images/R095.jfif') no-repeat;
+    background: url('../images/R095.jfif') no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 30px;
 
     &::before {
       content: '';
@@ -93,6 +93,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    padding: 30px 0;
 
     &-card {
       border-radius: 10px;

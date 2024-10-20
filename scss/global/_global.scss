@@ -1,6 +1,16 @@
 @import 'button';
 @import 'text';
 @import 'burger';
+@import 'form';
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: var(--primary-color);
+}
 
 ::selection {
   color: var(--white-color);

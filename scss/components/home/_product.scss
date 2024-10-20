@@ -1,0 +1,66 @@
+.product {
+  padding: 70px 0;
+  position: relative;
+  background: url('../images/bg.jpg') no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009c;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: var(--z-index-2);
+  }
+
+  &__title {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  &__card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    cursor: pointer;
+    
+    &-image {
+      padding: 30px;
+      max-width: 270px;
+      margin: 0 auto;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &-info {
+      padding: 30px;
+      border-top: 1px solid var(--dark-color);
+    }
+
+    &-name {
+      font-size: 1.4em;
+      line-height: 1.3;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    &-description {
+      line-height: 1.4;
+    }
+  }
+}

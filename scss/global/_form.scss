@@ -1,0 +1,20 @@
+.form {
+  @include flex-column;
+  gap: 20px;
+  &-input {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-color);
+    background-color: var(--white-color);
+  }
+
+  &-button {
+    padding: 30px;
+  }
+
+  &-checkbox {
+    min-width: 20px;
+    min-height: 20px;
+  }
+}

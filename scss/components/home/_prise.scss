@@ -1,0 +1,123 @@
+.prise {
+  padding: 70px 0;
+  background-color: #f6f6f6;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+  }
+
+  &__form {
+    max-width: 500px;
+
+    & .rub {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    &-block {
+      padding: 40px 0 0;
+      width: 100%;
+    }
+    
+    &-wrap {
+      position: relative;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    &-sum {
+      display: inline-block;
+      padding: 10px 12px;
+      white-space: nowrap;
+      font-size: 0.8em;
+      color: var(--gray-color);
+      background-color: var(--white-color);
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2);
+      border-radius: 4px;
+      position: absolute;
+      top: -40px; 
+      left: 0;
+      transform: translateX(-50%); 
+    }
+
+    &-row {
+      @include flex-between;
+      color: var(--gray-color);
+      font-size: 0.9em;
+    }
+
+    &-range {
+      position: relative;
+      width: 100%;
+      z-index: var(--z-index-2);
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 2px; 
+      background: var(--gray-color);
+      border-radius: 5px; 
+      outline: none; 
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px; 
+        height: 20px; 
+        background: var(--primary-color); 
+        border-radius: 50%; 
+        cursor: pointer; 
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); 
+      }
+
+      &::-moz-range-thumb {
+        width: 20px; 
+        height: 20px; 
+        background: var(--primary-color); 
+        border-radius: 50%; 
+        cursor: pointer; 
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); 
+      }
+
+      &::-moz-range-track {
+        height: 2px; 
+        background: var(--gray-color);
+        border-radius: 5px; 
+      }
+    }
+
+    &-privacy {
+      display: flex;
+      align-items: start;
+      gap: 7px;
+    }
+
+    &-checkbox {
+      transform: translateY(2px);
+    }
+
+    &-text {
+      font-size: 0.9em;
+      line-height: 1.3;
+
+      & a {
+        color: var(--primary-color);
+      }
+    } 
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+  }
+}
