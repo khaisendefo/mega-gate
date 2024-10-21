@@ -36,6 +36,14 @@
     border-radius: 10px;
     max-width: 500px;
     background-color: var(--white-color);
+    animation: modal .5s ease-in-out;
+  }
+
+  @keyframes modal {
+    0% {
+      opacity: 0.3;
+      transform: translateY(150px) scale(0.7);
+    }
   }
 
   &__title {

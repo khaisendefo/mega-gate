@@ -1,3 +1,12 @@
+AOS.init(
+  {
+    duration: 600, 
+    offset: 100,
+    easing: 'ease-in-out', 
+    once: false
+  }
+);
+
 // burger
 document.addEventListener('DOMContentLoaded', function () {
   const toggleButton = document.querySelector('.header__burger');
